@@ -1,0 +1,4 @@
+<!--pages/goods_list/index.wxml-->
+<view>
+<SearchInput></SearchInput>
+</view>
