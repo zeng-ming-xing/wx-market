@@ -1,2 +1,39 @@
 <!--pages/goos_detail/index.wxml-->
-<text>pages/goos_detail/index.wxml</text>
+<view class="goods_detail">
+  <swiper class="swiper" autoplay circular indicator-dots>
+     <swiper-item wx:for="{{goods.pics}}" wx:key="pics_id">
+       <image mode="widthFix" src="{{item.pics_mid}}" bindtap="priview" data-url="{{item.pics_mid}}"></image>
+     
+     </swiper-item>
+  </swiper>
+  <view class="goods_price">
+    ￥{{goods.goods_price}}
+  </view>
+  <view class="goods_name">
+    <view class="goods_title">
+      {{goods.goods_name}}
+    </view>
+    <view class="goods_collect">
+      收藏
+    </view>
+  </view>
+  <view class="imgtext">
+    <view class="title">
+       图文详情
+    </view>
+    <view class="goods_info">
+      <rich-text nodes="{{goods.goods_introduce}}"></rich-text>
+    </view>
+  </view>
+</view>
+<view class="btn_control">
+  <view class="item">
+   客服
+  </view>
+  <view class="item">店铺</view>
+  <navigator url="/pages/cart/index" open-type="switchTab">
+  <view class="item">购物车</view>
+</navigator>
+  <view class="item item_cart" bindtap="handlecartadd">加入购物车</view>
+  <view class="item item_shop">立即购买</view>
+</view>

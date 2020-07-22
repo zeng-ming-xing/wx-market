@@ -4,7 +4,7 @@
   padding: 10rpx;
   background-color: var(--themeColor);
 }
-.search_input navigator{
+.search_input .nav{
   display: flex;
   justify-content: center;/*字体垂直居中*/
   align-items: center;/*字体水平居中*/

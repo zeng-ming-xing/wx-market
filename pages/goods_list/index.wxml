@@ -1,4 +1,26 @@
 <!--pages/goods_list/index.wxml-->
 <view>
 <SearchInput></SearchInput>
+<table tabs="{{tables}}" bindtabsItemChange="handchange">
+
+<block wx:if="{{index==0}}">
+  <view class="first_tab" hover-class="none" hover-stop-propagation="false">
+    <navigator class="tab_item" url="" wx:for="{{goods_list}}" wx:for-item="item" wx:for-index="index" wx:key="goods_id" url="/pages/goos_detail/index?goods_id={{ item.goods_id}}" >
+        <view class="img_item" >
+            <image mode="widthFix" src="{{item.goods_big_logo}}" />
+        </view>
+        <view class="right_item">
+          <view class="item_title">{{item.goods_name}}</view>
+          <view class="item_price">${{item.goods_price}}</view>
+        </view>
+    </navigator>
+</view>
+</block>
+<block wx:elif="{{index==1}}">
+    
+</block>
+<block wx:elif="{{index==2}}">
+    
+</block>
+</table>
 </view>

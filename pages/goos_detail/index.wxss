@@ -1,1 +1,91 @@
 /* pages/goos_detail/index.wxss */
+.goods_detail{
+  width: 100vw;
+}
+.swiper{
+  width: 100vw;
+  height: 70vw;
+  text-align: center;
+}
+.swiper image{
+  width: 60%;
+}
+.goods_price{
+  color: red;
+  font-size: 40rpx;
+}
+.goods_name{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 8px solid rgb(241, 240, 240);
+  padding: 5rpx;
+}
+.goods_title{
+  flex:5;
+  border-right: 1px solid;
+  display: -webkit-box;
+  overflow: hidden;
+ 
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+ font-size: 30rpx;
+}
+.goods_collect{
+  flex:1;
+  text-align: center;
+}
+.imgtext{
+  width: 100vw;
+  margin-top: 30rpx;
+}
+.imgtext{
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 35rpx;
+}
+.btn_control{
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background-color: aliceblue;
+  width: 100vw;
+  height: 10vw;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item_cart{
+  background-color: rgb(238, 156, 63);
+  color: white;
+  font-size: 30rpx;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.item_shop{
+  background-color: rgb(243, 76, 10);
+  color: white;
+  flex: 2;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

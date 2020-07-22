@@ -1,1 +1,135 @@
-/* pages/cart/index.wxss */
+.address{
+  padding: 20rpx;
+}
+.address button{
+  width: 60%;
+}
+.user_info_row{
+ display: flex;
+ flex-wrap: nowrap;
+ font-size: 35rpx;
+}
+.user_info{
+  flex: 3;
+}
+.title{
+  padding: 10rpx;
+  font-size: 40rpx;
+  text-align: center;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+}
+.cart_item{
+  height: 25vw;
+  display: flex;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid rgb(230, 228, 228);
+}
+.checked{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  flex: 2;
+  height: 100%;
+  text-align: center;
+}
+.image image{
+  width: 80%;
+}
+.main_info{
+  flex: 4;
+}
+.goods_name{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_price-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+.goods_price{
+  text-align: left;
+  color: red;
+  font-size: 30rpx;
+}
+.goods_num{
+   display: flex;
+}
+.reduce , .add{
+  width: 45rpx;
+  height: 45rpx;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num {
+  width: 55rpx;
+  height: 55rpx;
+  text-align: center;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: rgb(243, 240, 240);
+  display: flex;
+}
+.all{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price_all{
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allprice{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.allprice_item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.hj{
+  flex: 4;
+  text-align: right;
+}
+.money{
+  flex: 2;
+  color: red;
+  text-align: right;
+  font-size: 30rpx;
+}
+.include{
+  text-align: right;
+}
+.topay{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  height: 100%;
+  font-size: 30rpx;
+}
+
+
+
