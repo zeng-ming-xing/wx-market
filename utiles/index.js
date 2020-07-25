@@ -44,3 +44,31 @@ export function chooseAddress(){
     })
   })
 }
+export function login(){
+  return new Promise((resolve,reject)=>{
+    wx.login({
+      timeout: 2000,
+      success:(res)=>{
+        resolve(res)
+      },
+      fail:(err)=>{
+        reject(err)
+      }
+    })
+  })
+}
+export const requestPayment=(pay)=>{
+  return new Promise((resolve,reject)=>{
+    wx.requestPayment({
+      ...pay,
+      success:(res)=>{
+        resolve(res)
+
+      },
+      fail:(err)=>{
+        reject(err);
+
+      }
+    })
+  })
+}

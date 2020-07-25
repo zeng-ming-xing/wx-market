@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "table": "../../components/tables/table"
+  },
+  "navigationBarTitleText":"意见反馈"
 }

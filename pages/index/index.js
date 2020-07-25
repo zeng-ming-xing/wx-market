@@ -43,6 +43,8 @@ getswiperList(){
       this.setData({
         swiperList:result
       })
+      console.log(this.data.swiperList);
+      
     })
 },
 //获取导航数据
@@ -52,6 +54,8 @@ getCateList(){
       this.setData({
         catesList:result
       })
+      console.log(this.data.cateList);
+      
     })
 },
 //获取楼层数据
@@ -61,6 +65,8 @@ getFloorList(){
       this.setData({
         floorList:result
       })
+      console.log(this.data.floorList);
+      
     })
 },
   /**

@@ -1,1 +1,105 @@
 /* pages/user/index.wxss */
+page{
+  background-color: rgb(235, 231, 235);
+}
+.userinfo_raw{
+  height: 45vh;
+  overflow: hidden;
+  background-color: tomato;
+}
+ .user_bg{
+  height: 48vh;
+  /*使用高斯模糊 图片*/
+ filter: blur(10rpx);
+}
+.user_info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  text-align: center;
+}
+.user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_name{
+  color: white;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+.user_login{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  border: 1px solid rgb(48, 233, 48);
+  color:rgb(48, 233, 48) ;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+.user_content{
+  position: relative;
+}
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+.history{
+  display: flex;
+  background-color: white;
+}
+.history  navigator{
+    flex: 1;
+    text-align: center;
+    padding: 10rpx;
+}
+.his_num{
+  color: tomato;
+}
+.order_row{
+  margin-top: 20rpx;
+  background-color: white;
+}
+.order_title{
+  padding: 15rpx;
+  border-bottom: 1px solid #ccc;
+}
+.order_content{
+  display: flex;
+}
+.order_content navigator
+{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+}
+.address_raw{
+  margin-top: 30rpx;
+  background-color: white;
+  padding: 10rpx;
+}
+.app_info{
+  margin-top: 30rpx;
+  background-color: white;
+}
+.app_item{
+  padding:20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.app_sep{
+  display: flex;
+  justify-content: space-between;
+}
+.recommend{
+  margin-top: 30rpx;
+  background-color: white;
+  padding:20rpx;
+}
+
+

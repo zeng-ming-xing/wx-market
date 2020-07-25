@@ -1,2 +1,21 @@
-<!--pages/collect/index.wxml-->
-<text>pages/collect/index.wxml</text>
+<table tabs="{{tables}}" bindtabsItemChange="handchange" index="{{index}}">
+  <view class="collect_main">
+    <view class="collect_title">
+      <text class="active">全部</text>
+      <text>正在热卖</text>
+      <text>即将上线</text>
+    </view>
+    <!--收藏列表-->
+    <view class="collect_content">
+      <navigator class="tab_item" url="" wx:for="{{collect}}" wx:for-item="item" wx:for-index="index" wx:key="goods_id" url="/pages/goos_detail/index?goods_id={{ item.goods_id}}" >
+        <view class="img_item" >
+            <image mode="widthFix" src="{{item.goods_big_logo}}" />
+        </view>
+        <view class="right_item">
+          <view class="item_title">{{item.goods_name}}</view>
+          <view class="item_price">${{item.goods_price}}</view>
+        </view>
+    </navigator>
+    </view>
+  </view>
+</table>

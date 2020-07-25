@@ -1,4 +1,7 @@
 // pages/auth/index.js
+import { request } from '../../request/index.js'
+import regeneratorRuntime, { async } from '../../lib/runtime/runtime';
+import {login} from "../../utiles/index"
 Page({
 
   /**
@@ -6,6 +9,17 @@ Page({
    */
   data: {
 
+  },
+  async getuserinfo(e){
+    console.log(e);
+    const {encryptedData,rawData,iv,signature}=e.detail;
+    const {code}=await login(); 
+    const loginparams={encryptedData,rawData,iv,signature,code}
+    const res=await request({url:"/users/wxlogin",data:loginparams,method:"post"})
+    const token='Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIzLCJpYXQiOjE1NjQ3MzAwNzksImV4cCI6MTAwMTU2NDczMDA3OH0.YPt-XeLnjV-_1ITaXGY2FhxmCe4NvXuRnRB8OMCfnPo'
+    wx.setStorageSync('token', token)
+    
+    
   },
 
   /**

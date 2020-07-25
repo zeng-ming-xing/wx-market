@@ -1,7 +1,7 @@
 <view>
 <view class="tab_title" > 
 <!--data-index="{{i}}"将遍历的下标传递给事件 小程序中传递参数需要使用data-name=“value”进行传递-->
-  <view wx:for="{{tabs}}" wx:for-index="i" bindtap="btn" data-index="{{i}}" wx:for-item="item" wx:key="i" class="tab_item {{i===index?'active':''}}" hover-stop-propagation="false">
+  <view wx:for="{{tabs}}" wx:for-index="i" bindtap="btn" data-index="{{i}}" wx:for-item="item" wx:key="i" class="tab_item {{i===index?'active':''}}">
     {{item.value}}
   </view>
 </view>

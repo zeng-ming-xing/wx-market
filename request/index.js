@@ -1,6 +1,12 @@
 let ajaxtimes=0;
 export const request=(params)=>{
+
+  //判断url中是否带有/my/ 请求的是私有路径 添加上请求头header
   ajaxtimes++;
+  let header={...params.header};
+  if(params.url.includes("/my/")){
+    header["Authorization"]=wx.getStorageSync('token');
+  }
   const baseurl="https://api-hmugo-web.itheima.net/api/public/v1"
   wx.showLoading({
     title: '加载中',
@@ -9,6 +15,7 @@ export const request=(params)=>{
   return new Promise((resolve,reject)=>{
     wx.request({
       ...params,
+      header:header,
       url:baseurl+params.url,
       success:(result)=>{
         resolve(result.data.message); 

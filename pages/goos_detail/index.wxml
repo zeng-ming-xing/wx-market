@@ -13,7 +13,7 @@
     <view class="goods_title">
       {{goods.goods_name}}
     </view>
-    <view class="goods_collect">
+    <view class="goods_collect {{iscollect?'active':''}}" bindtap="handcollect">
       收藏
     </view>
   </view>

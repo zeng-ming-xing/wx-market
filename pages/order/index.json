@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "table": "../../components/tables/table"
+  },
+  "navigationBarTitleText":"订单查询"
 }

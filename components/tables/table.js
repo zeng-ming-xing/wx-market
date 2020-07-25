@@ -7,6 +7,10 @@ Component({
         tabs: {
             type: Array,
             value: []
+        },
+        index:{
+             type:Number,
+             value:0
         }
     },
 
@@ -14,7 +18,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        index: 0
+        index:null
     },
 
     /**
@@ -25,7 +29,6 @@ Component({
         btn(e) {
             //获取传递过来的参数时获取到的是一个对象，使用结构赋值将值传递给index
             const { index } = e.currentTarget.dataset;
-            console.log(index);
             //设置index该组件中的index的值
             this.setData({
                     index
