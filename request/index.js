@@ -7,7 +7,7 @@ export const request=(params)=>{
   if(params.url.includes("/my/")){
     header["Authorization"]=wx.getStorageSync('token');
   }
-  const baseurl="https://api-hmugo-web.itheima.net/api/public/v1"
+  const baseurl=""
   wx.showLoading({
     title: '加载中',
     mask:true
